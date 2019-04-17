@@ -1,6 +1,6 @@
 var cbt = require('cbt_tunnels');
 module.exports = {
-  beforeEach: function (done) {
+  before: function (done) {
     console.log('Starting up tunnel');
     cbt.start({
       username: '<fill email here>',
@@ -13,7 +13,7 @@ module.exports = {
       }
     });
   },
-  afterEach: function (done) {
+  after: function (done) {
     console.log('Closing Down Tunnel');
     cbt.stop();
     done();
