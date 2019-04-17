@@ -1,46 +1,46 @@
 {
-  "src_folders" : ["tests"],
-  "output_folder" : "reports",
-  "custom_commands_path" : "",
-  "custom_assertions_path" : "",
-  "page_objects_path" : "",
-  "globals_path" : "global.js",
-
-  "selenium" : {
-    "start_process" : false,
-    "server_path" : "",
-    "log_path" : "",
-    "host" : "127.0.0.1",
-    "port" : 4444,
-    "cli_args" : {
-      "webdriver.chrome.driver" : "",
-      "webdriver.ie.driver" : ""
+  "src_folders": [
+    "tests"
+  ],
+  "output_folder": "reports",
+  "custom_commands_path": "",
+  "custom_assertions_path": "",
+  "page_objects_path": "",
+  "globals_path": "global.js",
+  "selenium": {
+    "start_process": false,
+    "server_path": "",
+    "log_path": "",
+    "host": "hub.crossbrowsertesting.com",
+    "port": 80,
+    "cli_args": {
+      "webdriver.chrome.driver": "",
+      "webdriver.ie.driver": ""
     }
   },
-
-  "test_settings" : {
-    "default" : {
-      "launch_url" : "/",
-      "selenium_port"  : 80,
-      "selenium_host"  : "hub.crossbrowsertesting.com",
+  "test_settings": {
+    "default": {
+      "launch_url": "localhost:8080",
+      "selenium_port": 80,
+      "selenium_host": "hub.crossbrowsertesting.com",
       "silent": true,
-      "screenshots" : {
-        "enabled" : true,
-        "path" : ""
-      },
+      "screenshots": {
+        "enabled": true,
+        "path": ""
+      },      
       "username": "<fill email here>",
       "access_key": "<fill key key>",
       "desiredCapabilities": {
         "acceptSslCerts": "1",
-        "browserName": "Internet Explorer",
-        "version": "10",
+        "browserName": "Chrome",
+        "version": "73",
         "build": "1.0",
         "javascriptEnabled": "1",
         "name": "NightwatchJSExample",
-        "platform" : "Windows 7 64-bit",
-        "record_network" : "false",
-        "record_video" : "true",
-        "screen_resolution" : "1024x768"
+        "platform": "Windows 10",
+        "record_network": "false",
+        "record_video": "true",
+        "screen_resolution": "1024x768"
       }
     }
   }
